@@ -174,7 +174,7 @@ func (c *Captcha) drawString(img *Image, str string) {
 	tmp := NewImage(c.size.X, c.size.Y)
 
 	// 文字大小为图片高度的 0.6
-	fsize := int(float64(c.size.Y) * 0.6)
+	fsize := int(float64(c.size.Y))
 	// 用于生成随机角度
 	r := rand.New(rand.NewSource(time.Now().UnixNano()))
 
